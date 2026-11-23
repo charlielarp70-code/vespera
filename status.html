@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vespera (2023)</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f5f6f8;
+      background: radial-gradient(circle at 50% 20%, #2b3a55 0%, #141c2b 55%, #0b1018 100%);
+    }
+    .card {
+      width: min(92vw, 520px);
+      padding: 44px 36px 38px;
+      text-align: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.45);
+      backdrop-filter: blur(6px);
+    }
+    .check {
+      width: 72px; height: 72px; margin: 0 auto 20px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #23c26b, #0e8f4c);
+      box-shadow: 0 8px 24px rgba(35,194,107,0.35);
+      font-size: 40px; line-height: 1; color: #fff;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: -0.4px; }
+    p { margin: 0; color: #a9b6ca; font-size: 15px; }
+    .download {
+      display: inline-block; margin-top: 24px; padding: 13px 26px;
+      border-radius: 10px; font-size: 16px; font-weight: 700;
+      color: #fff; text-decoration: none;
+      background: linear-gradient(135deg, #2d8cff, #1359d6);
+      box-shadow: 0 8px 24px rgba(21,89,214,0.4);
+    }
+    .download:hover { filter: brightness(1.12); }
+    .hint { margin-top: 12px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="check">&#10003;</div>
+    <h1>Vespera is up and running!</h1>
+    <p>The Vespera API is online and serving the app.</p>
+    <a class="download" href="/download/apk">Download Vespera APK</a>
+    <p class="hint">Latest signed Android build for this LAN server.</p>
+  </main>
+</body>
+</html>
